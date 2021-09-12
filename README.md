@@ -1,7 +1,7 @@
 Extra Python Scripts
 
 
-## **Extras**
+## **Miscellaneous**
 
 
 ### All of my individual creations
