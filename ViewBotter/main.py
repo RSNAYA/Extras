@@ -6,8 +6,8 @@ import threading
 from selenium import webdriver
 os.system("cls")
 init()
-ctypes.windll.kernel32.SetConsoleTitleW("6Ex's Profile Botter")
-usernames = []
+ctypes.windll.kernel32.SetConsoleTitleW("View Botter")
+url = 'YOUR URL HERE'
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -15,7 +15,7 @@ options.add_experimental_option('detach', True)
 driver = webdriver.Chrome(options=options, executable_path=r'chromedriver.exe')
 
 def add():
-    driver.get('https://github.com/RSNAYA/RSNAYA/blob/main/README.md')
+    driver.get(url)
     print(Fore.GREEN + '[' + Fore.WHITE + 'SENT' + Fore.GREEN + '] ' + "ONE VIEW" + Fore.WHITE)
         
 
