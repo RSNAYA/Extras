@@ -25,7 +25,7 @@
         runCodeButton.addEventListener("click", () => {
             const code = codeInput.value;
             try {
-                const result = eval(code);
+                const result = new Function(code)();
                 customLog("Output: " + result);
             } catch (error) {
                 customLog("Error: " + error.message);
